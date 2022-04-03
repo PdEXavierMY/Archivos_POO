@@ -19,8 +19,10 @@ def diccionario():
                 for valor in linea:
                     parametros.append(valor)
             else:
+                dic = {}
                 for i in range(9):
-                    lista.append({parametros[i]:linea[i]})
+                    dic.setdefault(parametros[i],linea[i])
+                lista.append(dic)
         print(lista)
     file.close()
 
