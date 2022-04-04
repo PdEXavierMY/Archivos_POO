@@ -46,20 +46,20 @@ def notafinal(lista):
         comprobarnumeros(valores, notasporcentajes, 0, 2)
         comprobarnumeros(valores, notasporcentajes, 1, 3)
         comprobarnumeros(valores, notasporcentajes, 4, 5)
-        n = notasporcentajes[0]*0,3 + notasporcentajes[1]*0,3 + notasporcentajes[2]*0,4
+        n = float(notasporcentajes[0])*0,3 + float(notasporcentajes[1])*0,3 + float(notasporcentajes[2])*0,4
         dic.setdefault("Nota Final", n)
 
-def comprobarnumeros(valores, notasporcentajes, a, b):
-    if valores[a] != "":
-            if int(valores[a]) < 5:
-                if valores[b] != "":
-                    notasporcentajes.append(int(valores[b]))
+def comprobarnumeros(lista1, lista2, a, b):
+    if lista1[a] != "":
+            if float(lista1[a]) < 5:
+                if lista1[b] != "":
+                    lista2.append(float(lista1[b]))
                 else:
-                    notasporcentajes.append(int(valores[a]))
+                    lista2.append(float(lista1[a]))
             else:
-                notasporcentajes.append(int(valores[a]))
+                lista2.append(float(lista1[a]))
     else:
-        if valores[b] != "":
-                notasporcentajes.append(int(valores[b]))
+        if lista1[b] != "":
+                lista2.append(float(lista1[b]))
         else:
-            notasporcentajes.append(0)
+            lista2.append(0)
