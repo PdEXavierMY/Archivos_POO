@@ -28,24 +28,17 @@ def diccionario():
 
 def ordenardic(lista):
     apellidos = []
-    listaordenada = []
+    lista_dicordenada = []
     for elemento in lista:
         apellidos.append(str(elemento["Apellidos"]))
-    for nombre in apellidos:
-        nombre.split(" ")
-        print(nombre)
-    print(apellidos)
-    for nombre in apellidos:
+    apellidosordenados = sorted(apellidos)
+    for nombre in apellidosordenados:
         for i in lista:
             if nombre == i["Apellidos"]:
-                listaordenada.append(i)
+                lista_dicordenada.append(i)
                 break
-    print("")
-    print(listaordenada)
-    return listaordenada
+    return lista_dicordenada
 
 
 l = diccionario()
-print(l)
-print("")
 ordenardic(l)

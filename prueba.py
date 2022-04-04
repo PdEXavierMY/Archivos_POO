@@ -14,5 +14,7 @@ print(dic[1])
 
 x = ['Anido Bonet', 'Bueno Cerdeira', 'Casariego García', 'Curbelo Sánchez', 'Díaz Souto', 'García Perez', 'Sánchez Jordán', 'Lorenzo García', 'Martínez Lucas']
 print(x[0].split(" "))
-y = ['Anido', 'Lauro', 'Bonet']
-print(sorted(y))
+y = ['Anido', 'Lauro', 'Bonet', 'Sánchez', "Lorenzo"]
+print(sorted(x))
+print("a"<"b")
+print("Sanchez"<"Lorenzo")
