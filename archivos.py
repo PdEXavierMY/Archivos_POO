@@ -81,8 +81,12 @@ def apto(lista):
             aprobados.append(dic["Nombre"]+" "+dic["Apellidos"])
         else:
             suspensos.append(dic["Nombre"]+" "+dic["Apellidos"])
-    print("APROBADOS:\n"+str(aprobados)+"\n")
-    print("SUSPENSOS:\n"+str(suspensos))
+    print("APROBADOS:\n")
+    for persona in aprobados:
+        print(persona)
+    print("\nSUSPENSOS:\n")
+    for persona in suspensos:
+        print(persona)
     return aprobados, suspensos
 
 notas = diccionario()
