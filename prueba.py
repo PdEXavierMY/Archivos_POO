@@ -18,3 +18,4 @@ y = ['Anido', 'Lauro', 'Bonet', 'Sánchez', "Lorenzo"]
 print(sorted(x))
 print("a"<"b")
 print("Sanchez"<"Lorenzo")
+print(float("5.5"))

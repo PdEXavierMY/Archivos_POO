@@ -48,6 +48,7 @@ def notafinal(lista):
         comprobarnumeros(valores, notasporcentajes, 4, 5)
         n = float(notasporcentajes[0])*0,3 + float(notasporcentajes[1])*0,3 + float(notasporcentajes[2])*0,4
         dic.setdefault("Nota Final", n)
+    return lista
 
 def comprobarnumeros(lista1, lista2, a, b):
     if lista1[a] != "":
@@ -63,3 +64,11 @@ def comprobarnumeros(lista1, lista2, a, b):
                 lista2.append(float(lista1[b]))
         else:
             lista2.append(0)
+
+notas = diccionario()
+print(notas)
+print("")
+notasord = ordenardic(notas)
+print(notasord)
+print("")
+print(a=notafinal(notasord))
