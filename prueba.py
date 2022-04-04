@@ -1,3 +1,7 @@
+from re import X
+from tkinter import Y
+
+
 dic = {1: "a",
         2:"b"}
 print(dic)
@@ -7,3 +11,8 @@ a = "2"
 b = "3"
 print(int(a)*int(b))
 print(dic[1])
+
+x = ['Anido Bonet', 'Bueno Cerdeira', 'Casariego García', 'Curbelo Sánchez', 'Díaz Souto', 'García Perez', 'Sánchez Jordán', 'Lorenzo García', 'Martínez Lucas']
+print(x[0].split(" "))
+y = ['Anido', 'Lauro', 'Bonet']
+print(sorted(y))

@@ -8,7 +8,7 @@ def diccionarioprueba():
     file.close()
 
 def diccionario():
-    with open("calificaciones.csv", newline='') as file:
+    with open("calificaciones.csv", newline='', encoding='utf-8') as file:
         reader = csv.reader(file, delimiter=';')
         lista = []
         parametros = []
@@ -28,11 +28,24 @@ def diccionario():
 
 def ordenardic(lista):
     apellidos = []
+    listaordenada = []
     for elemento in lista:
-        apellidos.append(elemento["Apellidos"])
-    sorted(apellidos)
+        apellidos.append(str(elemento["Apellidos"]))
+    for nombre in apellidos:
+        nombre.split(" ")
+        print(nombre)
+    print(apellidos)
+    for nombre in apellidos:
+        for i in lista:
+            if nombre == i["Apellidos"]:
+                listaordenada.append(i)
+                break
+    print("")
+    print(listaordenada)
+    return listaordenada
 
 
 l = diccionario()
 print(l)
+print("")
 ordenardic(l)
