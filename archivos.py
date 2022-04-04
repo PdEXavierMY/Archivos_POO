@@ -1,16 +1,12 @@
 import csv
-
-def diccionarioprueba():
-    with open("calificaciones.csv", newline='') as file:
-        reader = csv.reader(file, delimiter=';')
-        for linea in reader:
-            print(linea)
-    file.close()
+#se entinde que los ordinarios son las repeteciones de los parciales(ordinario1 del 1 y ordinario2 del 2)
+#en base a esta premisa tomaré los mismos porcentajes paar los parciales que para los ordinarios
 
 def diccionario():
     with open("calificaciones.csv", newline='', encoding='utf-8') as file:
         reader = csv.reader(file, delimiter=';')
         lista = []
+        global parametros
         parametros = []
         n = 0
         for linea in reader:
@@ -27,6 +23,7 @@ def diccionario():
     return lista
 
 def ordenardic(lista):
+    global apellidos
     apellidos = []
     lista_dicordenada = []
     for elemento in lista:
@@ -39,6 +36,13 @@ def ordenardic(lista):
                 break
     return lista_dicordenada
 
-
-l = diccionario()
-ordenardic(l)
+def notafinal(lista):
+    for dic in lista:
+        valores = []
+        for i in range(9):
+            valor = dic[parametros[i]]
+            if valor == "":
+                valores.append(0)
+            else:
+                valores.append(valor)
+        dic.setdefault("Nota Final", n)
