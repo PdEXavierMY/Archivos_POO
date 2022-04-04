@@ -47,7 +47,7 @@ def notafinal(lista):
         comprobarnumeros(valores, notasporcentajes, 0, 2)
         comprobarnumeros(valores, notasporcentajes, 1, 3)
         comprobarnumeros(valores, notasporcentajes, 4, 5)
-        n = (float(notasporcentajes[0])*0.3) + (float(notasporcentajes[1])*0.3) + (float(notasporcentajes[2])*0.4)
+        n = round((float(notasporcentajes[0])*0.3) + (float(notasporcentajes[1])*0.3) + (float(notasporcentajes[2])*0.4), 2)
         dic.setdefault("Nota Final", n)
     return lista
 
