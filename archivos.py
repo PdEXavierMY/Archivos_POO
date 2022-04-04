@@ -39,10 +39,12 @@ def ordenardic(lista):
 def notafinal(lista):
     for dic in lista:
         valores = []
-        for i in range(9):
+        for i in range(3, 9):
             valor = dic[parametros[i]]
             if valor == "":
                 valores.append(0)
             else:
                 valores.append(valor)
+        notasporcentajes = []
+        n = notasporcentajes[0]*0,3 + notasporcentajes[1]*0,3 + notasporcentajes[2]*0,4
         dic.setdefault("Nota Final", n)
