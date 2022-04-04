@@ -18,7 +18,8 @@ def diccionario():
             else:
                 dic = {}
                 for i in range(9):
-                    dic.setdefault(parametros[i],linea[i])
+                    a = linea[i].replace(",", ".")
+                    dic.setdefault(parametros[i],a)
                 lista.append(dic)
     file.close()
     return lista
@@ -52,7 +53,7 @@ def notafinal(lista):
 
 def comprobarnumeros(lista1, lista2, a, b):
     if lista1[a] != "":
-            if float(lista1[a]) < 5:
+            if float(lista1[a]) < 5.0:
                 if lista1[b] != "":
                     lista2.append(float(lista1[b]))
                 else:
@@ -70,5 +71,3 @@ print(notas)
 print("")
 notasord = ordenardic(notas)
 print(notasord)
-print("")
-print(a=notafinal(notasord))

@@ -1,7 +1,3 @@
-from re import X
-from tkinter import Y
-
-
 dic = {1: "a",
         2:"b"}
 print(dic)
@@ -18,4 +14,4 @@ y = ['Anido', 'Lauro', 'Bonet', 'Sánchez', "Lorenzo"]
 print(sorted(x))
 print("a"<"b")
 print("Sanchez"<"Lorenzo")
-print(float("5.5"))
+print(float("5"))
