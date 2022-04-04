@@ -77,13 +77,18 @@ def apto(lista):
         comprobarnumeros(valores, notasporcentajes, 0, 2)
         comprobarnumeros(valores, notasporcentajes, 1, 3)
         comprobarnumeros(valores, notasporcentajes, 4, 5)
+        print(notasporcentajes)
         if dic["Asistencia"]>="75%" and dic["Nota Final"]>=5.0 and notasporcentajes[0]>=4.0 and notasporcentajes[1]>=4.0 and notasporcentajes[2]>=4.0:
-            aprobados.append([dic["Nombre"], dic["Apellidos"]])
+            aprobados.append(dic["Nombre"]+" "+dic["Apellidos"])
         else:
-            suspensos.append([dic["Nombre"], dic["Apellidos"]])
-    print(aprobados)
-    print(suspensos)
+            suspensos.append(dic["Nombre"]+" "+dic["Apellidos"])
+    print("APROBADOS:\n"+str(aprobados)+"\n")
+    print("SUSPENSOS:\n"+str(suspensos))
+    return aprobados, suspensos
 
 notas = diccionario()
 notasord = ordenardic(notas)
-print(notafinal(notasord))
+n = notafinal(notasord)
+print(n)
+print("")
+apto(n)
