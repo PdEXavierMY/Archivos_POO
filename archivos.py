@@ -43,7 +43,6 @@ def notafinal(lista):
         valores = []
         for i in range(3, 9):
             valores.append(dic[parametros[i]])
-        global notasporcentajes
         notasporcentajes = []
         comprobarnumeros(valores, notasporcentajes, 0, 2)
         comprobarnumeros(valores, notasporcentajes, 1, 3)
@@ -70,6 +69,11 @@ def comprobarnumeros(lista1, lista2, a, b):
 def apto(lista):
     aprobados = []
     suspensos = []
+    for dic in lista:
+        if dic["Asistencia"]>="75%" and dic["Nota Final"]>=5.0:
+            aprobados.append(a)
+        else:
+            suspensos.append(a)
 
 notas = diccionario()
 notasord = ordenardic(notas)
