@@ -23,8 +23,16 @@ def diccionario():
                 for i in range(9):
                     dic.setdefault(parametros[i],linea[i])
                 lista.append(dic)
-        print(lista)
     file.close()
+    return lista
 
-diccionarioprueba()
-diccionario()
+def ordenardic(lista):
+    apellidos = []
+    for elemento in lista:
+        apellidos.append(elemento["Apellidos"])
+    sorted(apellidos)
+
+
+l = diccionario()
+print(l)
+ordenardic(l)
