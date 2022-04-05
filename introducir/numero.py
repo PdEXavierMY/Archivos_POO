@@ -35,7 +35,7 @@ def solicitar_introducir_numero_extremo(invite, minimum=MIN, maximum=MAX):
     Esta función utiliza el anterior y añade una post-condición
     sobre los extremos del número a introducir
     """
-    invite = "{} entre {} y {} incluídos".format(invite, minimum, maximum)
+    invite = "{} entre {} y {} incluídos)".format(invite, minimum, maximum)
     while True:
         # Entramos en un bucle infinito
 
@@ -45,3 +45,5 @@ def solicitar_introducir_numero_extremo(invite, minimum=MIN, maximum=MAX):
         if minimum <= datoIntroducido <= maximum:
             # Tenemos lo que queremos, salimos del bucle saliendo de la función
             return datoIntroducido
+        else:
+            print("Seleccione un número de los permitidos.")
