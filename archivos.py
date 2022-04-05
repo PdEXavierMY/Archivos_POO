@@ -65,6 +65,8 @@ class Calificaciones:
                     lista2.append(float(lista1[b]))
             else:
                 lista2.append(0)
+ #comprueba si los parciales tienen nota, si no miran las ordinarias y si están en blanco cogen un 0, y si no, la nota de las ordinarias
+ #si los parciales tienen nota, comprueba si es >5, si lo es cogen la nota, si no buscan en la ordinaria(igual que antes)
 
     def apto(lista):
         aprobados = []
