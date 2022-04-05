@@ -101,3 +101,8 @@ class Calificaciones:
             print(persona)
         return aprobados, suspensos
 ```
+Su UML es el siguiente:
+
+<br>
+<img height="250" src="UML/UML HerenciasG 1.jpg" />
+<br>
