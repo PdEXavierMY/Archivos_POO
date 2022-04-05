@@ -1,9 +1,8 @@
-from introducir import
 from introducir.numero import solicitar_introducir_numero 
 from archivos import Calificaciones as C
 
 if __name__ == "__main__":
-    elección = solicitar_introducir_numero("¿Desea mostrar la lista de diccionarios del archivo csv(1), mostrar la lista de diccionarios del archivo csv con las notas finales(2), o mostrar los alumnos aprobados y suspendos(3)?")
+    elección = solicitar_introducir_numero("¿Desea mostrar la lista de diccionarios del archivo csv(1), mostrar la lista de diccionarios del archivo csv con las notas finales(2), o mostrar los alumnos aprobados y suspendos(3)?(cualquier otro número para salir)")
     notas = C.diccionario()
     notasord = C.ordenardic(notas)
     notasfinales = C.notafinal(notasord)
@@ -19,3 +18,4 @@ if __name__ == "__main__":
         print("Los aprobados y suspensos siguiendo los criterios establecidos son los siguientes:\n")
         C.apto(notasfinales+"\n")
     else:
+        print("Ha seleccionado la opción de salir.")
