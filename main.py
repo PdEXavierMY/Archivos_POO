@@ -1,4 +1,4 @@
-from introducir import *
+from introducir import solicitar_introducir_numero
 from archivos import Calificaciones as C
 
 if __name__ == "__main__":
