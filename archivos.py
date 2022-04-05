@@ -91,7 +91,9 @@ def apto(lista):
 
 notas = diccionario()
 notasord = ordenardic(notas)
+print(notasord)
 n = notafinal(notasord)
+print("n")
 print(n)
 print("")
 apto(n)
