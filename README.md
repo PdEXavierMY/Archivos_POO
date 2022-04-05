@@ -104,5 +104,5 @@ class Calificaciones:
 Su UML es el siguiente:
 
 <br>
-<img height="250" src="UML/UML HerenciasG 1.jpg" />
+<img height="250" src="UML/archivos_POO.jpg" />
 <br>
