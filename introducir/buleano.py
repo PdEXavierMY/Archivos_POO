@@ -3,8 +3,8 @@ Módulo que agrupa todas las funcionalidades
 que permiten solicitar introducir un dato cuya respuesta es VERDADERO/SÍ o FALSO/NO
 """
 
-SI = ("s", "sí", "si", "y", "yes", "1")
-VERDADERO = ("v", "verdadero", "t", "true", "1")
+SI = ("s", "sí", "si", "y", "yes")
+VERDADERO = ("v", "verdadero", "t", "true")
 
 
 def solicitar_introducir_si_o_no(invite):
