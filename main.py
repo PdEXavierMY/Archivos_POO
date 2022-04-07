@@ -1,4 +1,4 @@
-from ejecutar import ejecutar
+from lanzador import lanzador
 
 if __name__ == "__main__":
-    ejecutar()
+    lanzador()

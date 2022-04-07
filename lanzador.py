@@ -1,7 +1,7 @@
 from introducir import solicitar_introducir_numero, solicitar_introducir_numero_extremo, solicitar_introducir_si_o_no
 from archivos import Calificaciones as C
 
-def ejecutar():
+def lanzador():
     elección = solicitar_introducir_numero("¿Desea mostrar la lista de diccionarios del archivo csv(1), mostrar la lista de diccionarios del archivo csv con las notas finales(2), o mostrar los alumnos aprobados y suspendos(3)?(cualquier otro número para salir)")
     if elección == 1:
         bonito = solicitar_introducir_numero_extremo("¿Desea ver la lista de dic(1), o los diccionarios por línea(más limpio pero sin la lista)(2)?: (eliga", 1, 2)
@@ -51,6 +51,6 @@ def ejecutar():
 def seguir():
     continuar = solicitar_introducir_si_o_no("¿Desea seguir ejecutando el código?(si o cualquier valor para cerrar): ")
     if continuar != False:
-        ejecutar()
+        lanzador()
     else:
         exit()
