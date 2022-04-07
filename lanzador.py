@@ -49,7 +49,7 @@ def lanzador():
         print("Ha seleccionado la opción de salir.")
 
 def seguir():
-    continuar = solicitar_introducir_si_o_no("¿Desea seguir ejecutando el código?(si o cualquier valor para cerrar): ")
+    continuar = solicitar_introducir_si_o_no("\n¿Desea seguir ejecutando el código?(si o cualquier valor para cerrar): ")
     if continuar != False:
         lanzador()
     else:
