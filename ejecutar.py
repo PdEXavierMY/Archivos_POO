@@ -49,7 +49,7 @@ def ejecutar():
         print("Ha seleccionado la opción de salir.")
 
 def seguir():
-    continuar = solicitar_introducir_si_o_no("¿Desea seguir ejecutando el código?(si o no): ")
+    continuar = solicitar_introducir_si_o_no("¿Desea seguir ejecutando el código?(si o cualquier valor para cerrar): ")
     if continuar != False:
         ejecutar()
     else:
